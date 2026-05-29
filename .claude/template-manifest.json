@@ -1,0 +1,47 @@
+{
+  "version": "0.3.0",
+  "description": "Lista canonica de archivos managed por el template Prometeo. Usado por /p-actualizar-template para saber que actualizar.",
+  "managed": [
+    ".claude/skills/p-config-entorno/SKILL.md",
+    ".claude/skills/p-config-appsscript/SKILL.md",
+    ".claude/skills/p-planear-milestone/SKILL.md",
+    ".claude/skills/p-ejecutar-milestone/SKILL.md",
+    ".claude/skills/p-verificar-dev/SKILL.md",
+    ".claude/skills/p-promover-prod/SKILL.md",
+    ".claude/skills/p-diagnosticar-error/SKILL.md",
+    ".claude/skills/p-nuevo-milestone/SKILL.md",
+    ".claude/skills/p-arreglo-rapido/SKILL.md",
+    ".claude/skills/p-actualizar-template/SKILL.md",
+    ".claude/template-manifest.json",
+    "CLAUDE.md",
+    ".cursorrules",
+    "docs/WORKFLOW.md",
+    "docs/PROMPT-INSTALACION.md",
+    "docs/IDS.example.md",
+    "scripts/_lib.js",
+    "scripts/push.js",
+    "scripts/deploy.js",
+    "scripts/promote.js",
+    "scripts/open.js",
+    "scripts/logs.js",
+    "environments.example.json",
+    "TEMPLATE_VERSION",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "hybrid": [
+    ".gitignore",
+    ".claspignore",
+    "package.json"
+  ],
+  "owned_never_touch": [
+    "Main.js",
+    "appsscript.json",
+    "environments.json",
+    "docs/PRD.md",
+    "docs/IDS.md",
+    "docs/milestones/**",
+    "docs/fixes/**",
+    ".planning/state.json"
+  ]
+}

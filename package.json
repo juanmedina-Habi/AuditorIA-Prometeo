@@ -1,0 +1,15 @@
+{
+  "name": "prometeo-appscript-template",
+  "private": true,
+  "scripts": {
+    "push:dev": "node scripts/push.js dev",
+    "push:prod": "node scripts/push.js prod",
+    "deploy:dev": "node scripts/deploy.js dev",
+    "deploy:prod": "node scripts/deploy.js prod",
+    "promote": "node scripts/promote.js",
+    "open:dev": "node scripts/open.js dev",
+    "open:prod": "node scripts/open.js prod",
+    "logs:dev": "node scripts/logs.js dev",
+    "logs:prod": "node scripts/logs.js prod"
+  }
+}

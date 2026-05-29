@@ -1,0 +1,14 @@
+{
+  "dev": {
+    "scriptId": "PEGA_AQUI_TU_SCRIPT_ID_DEV",
+    "deploymentId": "",
+    "deploymentDescription": "",
+    "deployedAt": ""
+  },
+  "prod": {
+    "scriptId": "PEGA_AQUI_TU_SCRIPT_ID_PROD",
+    "deploymentId": "",
+    "deploymentDescription": "",
+    "deployedAt": ""
+  }
+}

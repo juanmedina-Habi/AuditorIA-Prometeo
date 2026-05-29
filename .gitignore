@@ -1,0 +1,51 @@
+# Dependencias
+node_modules/
+
+# Credenciales y configuracion sensible
+.clasprc.json
+environments.json
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+
+# IDs reales del proyecto (se generan tras p-config-appsscript)
+docs/IDS.md
+
+# Backups locales generados por /p-actualizar-template
+.template-backup/
+
+# Notas y borradores locales (no se suben al repo)
+*.local.md
+*.local.json
+*.local.txt
+notes/
+scratch/
+.tmp/
+tmp/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build/cache
+dist/
+build/
+.cache/

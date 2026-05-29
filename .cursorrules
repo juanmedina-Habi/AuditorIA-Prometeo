@@ -1,0 +1,36 @@
+# Proyecto Prometeo — reglas para Cursor
+
+Ver `CLAUDE.md` para la guia completa. Resumen de reglas duras:
+
+1. **Lee `docs/PRD.md` antes de planear o ejecutar.** Es la fuente de verdad del proyecto.
+2. **Trabaja en espanol.** Mensajes, commits, comentarios.
+3. **Nunca edites en el editor web de Apps Script.** Todo cambio nace en Cursor + clasp.
+4. **Respeta el scope del milestone activo.** No construyas funcionalidades de milestones futuros.
+5. **Secretos en `PropertiesService.getScriptProperties()`.** Nunca en archivos .js / .gs.
+   - Patron OPCIONAL: propiedad `AMBIENTE` (`dev`/`prod`) + helpers `isDev()/isProd()` en `Config.js`. Usala cuando el milestone tenga efectos irreversibles que necesiten guard explicito en codigo. La separacion DEV/PROD ya esta garantizada por proyectos Apps Script distintos + valores distintos por propiedad; `AMBIENTE` solo se añade cuando hace falta branching en codigo. Ver detalle en CLAUDE.md.
+6. **Codigo en archivos separados por responsabilidad.** No un archivo gigante.
+7. **El repo (no el Google Doc) es la fuente de verdad.** Actualiza `docs/PRD.md` si cambia el plan.
+8. **Confirma antes de cambios grandes.** Crear archivos, instalar paquetes, desplegar.
+9. **El usuario no es tecnico.** Explica antes de actuar, pregunta cuando dudes.
+
+## Skills del repo (en `.claude/skills/`)
+
+Usalas cuando el usuario describa la intencion correspondiente:
+
+- `/p-config-entorno` — instalar Node, nvm, clasp (setup inicial)
+- `/p-config-appsscript` — crear proyectos dev/prod, llenar IDs
+- `/p-planear-milestone` — planear antes de codificar
+- `/p-ejecutar-milestone` — implementar plan aprobado
+- `/p-verificar-dev` — desplegar a dev y validar
+- `/p-promover-prod` — promover dev validado a prod
+- `/p-diagnosticar-error` — diagnosticar fallos
+- `/p-nuevo-milestone` — cerrar uno y empezar el siguiente
+- `/p-arreglo-rapido` — ajuste pequeno sobre algo ya en PROD (versionado decimal: v2.0 → v2.1)
+- `/p-actualizar-template` — trae actualizaciones del template original (skills, docs, scripts) sin tocar codigo del usuario
+
+## Comandos del repo
+
+- `npm run deploy:dev` — push + deployment en dev
+- `npm run promote` — push + deployment en prod (promocion)
+- `npm run logs:dev` / `logs:prod` — ver logs
+- `npm run open:dev` / `open:prod` — abrir editor (solo para logs/ejecutar funcion)

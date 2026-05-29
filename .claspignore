@@ -1,0 +1,60 @@
+# Archivos que clasp NO debe subir al proyecto de Apps Script.
+# Solo el codigo .js / .gs / .html y appsscript.json deben llegar al editor.
+
+# Scripts auxiliares de Node (deploy/push/promote) - NO van a Apps Script
+scripts/**
+
+# Dependencias y paquetes
+node_modules/**
+package.json
+package-lock.json
+yarn.lock
+
+# Configuracion de clasp y ambientes (sensible)
+.clasp.json
+.clasprc.json
+environments.json
+environments.example.json
+
+# Configuracion de Git
+.git/**
+.gitignore
+.gitattributes
+
+# Documentacion y contexto del repo - NO van a Apps Script
+README.md
+CLAUDE.md
+.cursorrules
+.cursor/**
+.claude/**
+docs/**
+*.md
+
+# Variables de entorno y secretos
+.env
+.env.*
+secrets/**
+credentials/**
+*.pem
+*.key
+
+# Notas y borradores locales
+*.local.*
+notes/**
+scratch/**
+.tmp/**
+tmp/**
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/**
+.idea/**
+*.swp
+*.swo
+
+# Logs y caches
+*.log
+.cache/**
+dist/**
+build/**
