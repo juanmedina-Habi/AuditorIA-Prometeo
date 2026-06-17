@@ -1,5 +1,7 @@
 # Guia para asistentes de IA — Proyecto Prometeo
 
+Antes de planear o ejecutar cualquier tarea en este repo, lee `docs/PRD.md` para entender el contexto del proyecto.
+
 Este repositorio es una **plantilla del proyecto Prometeo** (Habi / Inteligencia de Mercados). El usuario es del equipo operativo y construye automatizaciones en Google Apps Script con tu ayuda (vibecoding). **No es desarrollador.**
 
 ## Antes de hacer cualquier cosa
